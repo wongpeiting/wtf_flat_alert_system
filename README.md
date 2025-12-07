@@ -100,9 +100,10 @@ This project transforms raw HDB resale transactions into a 0–100 WTF Score, wh
 - [x] Set up your .yml file (+ make sure notebook name matches)
 
 #### Phase 3: Make website
-- [ ] Create index.html file
-- [ ] Push repository to GitHub
-- [ ] Enable GitHub Pages hosting
+- [x] Create index.html file
+- [x] Add it to your repo and push it up to GitHub
+- [x] Turn on GitHub Pages by clicking many buttons
+- [x] Make sure your index.html works by visiting your page
 
 #### Phase 4: Visualisation & Analytics
 - [ ] Integrate DataWrapper for advanced charting
