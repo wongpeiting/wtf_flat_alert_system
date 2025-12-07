@@ -91,13 +91,13 @@ This project transforms raw HDB resale transactions into a 0–100 WTF Score, wh
 
 ### Project roadmap
 
-#### Phase 1: Data Collection ✓
+#### Phase 1: Data Collection
 - [x] Write a scraper to grab the exact data needed
 - [x] Employ the help of ChatGPT to analyse the raw data and identify the WTF flats on a rolling month basis.
 - [x] Save the WTF flat output in CSV
 
 #### Phase 2: Automation
-- [x] Mkae it a GitHub repository
+- [x] Make it a GitHub repository
 - [ ] Set up GitHub Actions for auto-scraping
 - [ ] Follow GitHub Actions auto-scraper tutorial
 - [ ] Adapt scraper for continuous updates
