@@ -1,9 +1,7 @@
-# The WTF Flat Alert System
-## A live radar for Singapore's most eyebrow-raising HDB resale transactions
+# The WTF flat index 🤯
+## A live tracker of Singapore’s public housing flats whose resale price patterns raise an unmistakable “...wait, what?”
 
-Some flats sell high. Some sell really high. And then there are the ones that make property analysts inhale sharply through their teeth. 
-
-This auto-updating website project is built to make the flats in that last category glow like neon signs.
+Some Housing Board (HDB) flats in Singapore sell high. Some sell really high. And then there are the ones that make property analysts inhale sharply through their teeth. This auto-updating project is built to spotlight those outlier flats the moment they appear.
 
 The WTF Flat Alert System scans every new resale transaction and flags the units that blow past neighbourhood norms, historical trends, and common sense. Think of it as a seismograph for property weirdness.
 
