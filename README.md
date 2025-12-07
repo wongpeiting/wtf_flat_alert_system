@@ -1,9 +1,9 @@
 # The WTF flat alert system 🤯
 ## A live tracker of Singapore’s public housing flats whose resale price patterns raise an unmistakable “...wait, what?”
 
-Some Housing Board (HDB) flats in Singapore sell high. Some sell really high. And then there are the ones that make property analysts inhale sharply through their teeth. This auto-updating project is built to spotlight those outlier flats the moment they appear.
+Some Housing Board (HDB) flats in Singapore sell high. Some sell really high. And then there are the ones that make property analysts inhale sharply through their teeth. This auto-updating project is built to spotlight the outlier flats in the past month the moment they appear.
 
-The WTF Flat Alert System scans every new resale transaction and flags the units that blow past neighbourhood norms, historical trends, and common sense. Think of it as a seismograph for property weirdness.
+The WTF Flat Alert System scans every new resale transaction and flags the units that blow past neighbourhood norms, historical trends, and common sense. Think of it as a seismograph for weirdness in the city-state's housing market.
 
 ---
 
@@ -89,23 +89,22 @@ This project transforms raw HDB resale transactions into a 0–100 WTF Score, wh
 
 ### Project roadmap
 
-#### Phase 1: Data Collection
+#### Phase 1: Data collection
 - [x] Write a scraper to grab the exact data needed
 - [x] Employ the help of ChatGPT to analyse the raw data and identify the WTF flats on a rolling month basis.
 - [x] Save the WTF flat output in CSV
 
 #### Phase 2: Automation
 - [x] Make it a GitHub repository
-- [ ] Set up GitHub Actions for auto-scraping
-- [ ] Follow GitHub Actions auto-scraper tutorial
-- [ ] Adapt scraper for continuous updates
+- [x] Turn on GitHub Actions (and set it up)
+- [x] Set up your .yml file (+ make sure notebook name matches)
 
-#### Phase 3: Web Deployment
-- [ ] Create interactive website (index.html)
+#### Phase 3: Make website
+- [ ] Create index.html file
 - [ ] Push repository to GitHub
 - [ ] Enable GitHub Pages hosting
 
-#### Phase 4: Visualization & Analytics
+#### Phase 4: Visualisation & Analytics
 - [ ] Integrate DataWrapper for advanced charting
 - [ ] Set up external data links (avoid CSV uploads)
 - [ ] Create custom dashboard metrics
