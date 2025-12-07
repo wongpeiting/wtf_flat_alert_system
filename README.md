@@ -105,7 +105,7 @@ This project transforms raw HDB resale transactions into a 0–100 WTF Score, wh
 - [x] Turn on GitHub Pages by clicking many buttons
 - [x] Make sure your index.html works by visiting your page
 
-#### Phase 4: Visualisation & Analytics
+#### Phase 4: Map visualisation
 - [ ] Integrate DataWrapper for advanced charting
 - [ ] Set up external data links (avoid CSV uploads)
 - [ ] Create custom dashboard metrics
