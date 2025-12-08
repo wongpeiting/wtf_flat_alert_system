@@ -18,10 +18,10 @@ If it makes the model squint, it makes the list.
 ### The WTF meter
 Every flat gets a WTF Score (0–100) based on how extreme its deviations are in context.
 - 0–70: Not particularly WTF
-- 70–80: Curious little oddball
+- 70–80: Mild anomaly
 - 80-85: Something is… off
 - 85–90: Spicy deviation
-- 90–100: Absolutely feral pricing
+- 90–100: Feral pricing
 
 ### Why build an alert system
 Because Singapore’s housing market is full of micro-stories hiding inside transaction tables – stories about desirability, scarcity, superstition, renovation trends, and sometimes sheer human irrationality.
