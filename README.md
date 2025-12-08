@@ -117,9 +117,14 @@ This system transforms raw HDB resale transactions into a 0–100 WTF Score usin
 - [x] Make sure your index.html works by visiting your page
 
 #### Phase 4: Map visualisation
-- [ ] Integrate DataWrapper for advanced charting
-- [ ] Set up external data links (avoid CSV uploads)
-- [ ] Create custom dashboard metrics
+- [x] Create chart/map using Datawrapper
+- [x] Make sure we're linking to our data, not uploading it
+- [x] Use the 'responsive iframe' version of embedding
+
+#### Phase 5: Update our website
+- [x] Add the embed code to our index.html
+- [x] Push it on up to GitHub Pages
+- [x] Wait for GitHub actions to finish deploying our web page
 
 ---
 
