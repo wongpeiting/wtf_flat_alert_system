@@ -17,10 +17,10 @@ If it makes the model squint, it makes the list.
 
 ### The WTF meter
 Not all outliers are equal. Each flat gets a WTF Score (0–100) based on how dramatically it deviates from expected resale patterns.
-- 0–25: Mildly interesting
-- 25–50: Hmm, okay, someone wanted this
-- 50–75: Valuers stared at the ceiling for a bit
-- 75–100: Full-blown unicorn sale ripe for public debate
+- 0–70: Not particularly WTF
+- 70–88: Interesting eyebrow-raiser
+- 88–90: Valuers rubbed their temples
+- 90–100: Unicorn sale — call the press
 
 ### Why build an alert system
 Because Singapore’s housing market is full of micro-stories hiding inside transaction tables – stories about desirability, scarcity, superstition, renovation trends, and sometimes sheer human irrationality.
@@ -39,7 +39,7 @@ The WTF Flat Alert System is a curiosity engine, providing a way to help Singapo
 ---
 
 ### If you want to geek out 
-This project is built as part of Jonathan Soma's Foundations class in the M.S. Data Journalism programme at Columbia Journalism School. Throughout its development, ChatGPT is extensively consulted to assist with coding, debugging, and refining analytical approaches.
+This project is built as part of Jonathan Soma's Foundations class in the M.S. Data Journalism programme at Columbia Journalism School. Throughout its development, ChatGPT is extensively consulted to assist with coding, debugging, and refining analytical approaches as it's still early on in the programme.
 
 #### A quick rundown of what the code does:
 1. Python ingests the HDB resale dataset daily as it is updated.
