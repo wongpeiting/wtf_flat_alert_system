@@ -18,8 +18,8 @@ If it makes the model squint, it makes the list.
 ### The WTF meter
 Not all outliers are equal. Each flat gets a WTF Score (0–100) based on how dramatically it deviates from expected resale patterns.
 - 0–70: Not particularly WTF
-- 70–88: Interesting eyebrow-raiser
-- 88–90: Valuers rubbed their temples
+- 70–85: Interesting eyebrow-raiser
+- 85–90: Valuers rubbed their temples
 - 90–100: Unicorn sale — call the press
 
 ### Why build an alert system
