@@ -133,4 +133,15 @@ This system transforms raw HDB resale transactions into a 0–100 WTF Score usin
 
 ---
 
-*Last updated: Dec 7, 2025*
+##### Reflections
+
+When I began this project, I was skeptical that I could pull off anything remotely close in less than a week. I had not worked with APIs much outside of coursework, and certainly never modelled outliers or deployed something that updates itself. But after following the steps in [this tutorial](https://www.youtube.com/watch?v=QNKxzkNpsko), before long, I found myself with a completed site in a single day. Soma did comment that my pitch was very basic, so I don't doubt that I picked a highly munchable project for myself too. My biggest takeaway is in understanding how each piece of the project's puzzle (Datawrapper, GitHub, VS Code, etc.) speak to each other, and in learning how to debug and work through ~~life's~~a data-heavy project's biggest issues with generous, generous help from ChatGPT.
+
+##### What I wanted to do but couldn’t yet
+
+I wanted to devise and work with a more authoritative predictive model to estimate expected resale prices, but I am not a data scientist, so I worked with ChatGPT to get a predictive model going. The resultant model definitely needs to be withstand critique and finessed with inputs from a property analyst or valuer, so I only view the data model as Version 1.0.
+
+On the product side, I had some thoughts to design a proper interactive dashboard with filters, hover tooltips, and the ability to do historical replay (since my data goes back to 1990). It would be so cool to see how the WTF flats moved across the map over the past 35 years to land at where we are today. Ideas for another time.
+
+*Created on: Dec 7, 2025*
+*Last updated: Dec 8, 2025*
