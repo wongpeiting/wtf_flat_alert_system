@@ -83,11 +83,15 @@ This system transforms raw HDB resale transactions into a 0–100 WTF Score usin
     - No single sale overwhelms the scale.
 
 6. **WTF score calculation**
-- Each of the four dimensions contributes to the overall score with these editorial weights: price shock (35%), outlier jump (25%), market defier (15%) and unexplainable spike (25%).
-- Weights reflect their relative storytelling value:
-    - Price shock: Weight the highest because it is the clearest, simplest signal for readers, i.e. “This 4-room in Yishun sold WAY above other 4-rooms in Yishun”. Also, it provides a wide, stable baseline with sufficient data (town + flat type always has many transactions).
-    - Outlier jump: Secondary because block-level deviations can be dramatic (e.g., one unit renovated to the skies). However, block histories can be thin as some blocks don’t transact frequently, so variance at this granularity is higher.
-    - Unexplainable spike: Given equal weight to outlier jump because this is a sanity check dimension, moderating the effect of rare or unusual flats whose raw z-scores might look wild simply due to thin group sizes. It helps ensure the alerts aren’t just structural quirks (big flats, young flats, etc.).
+- Each of the four dimensions contributes to the overall score based on these weights: 
+    - Price shock (35%),
+    - Outlier jump (25%), 
+    - market defier (15%), and 
+    - unexplainable spike (25%).
+- Weights reflect their relative value to the calculation of a flat's "WTF-ness":
+    - Price shock: Given the highest weightage as it is the clearest, simplest signal for WTF-ness, i.e. “This 4-room in Yishun sold WAY above other 4-rooms in Yishun”. Also, it provides a wide, stable baseline with sufficient data (town + flat type always has many transactions).
+    - Outlier jump: Secondary because block-level deviations can be dramatic (e.g. one very well-renovated unit). However, block histories can be thin as some blocks don’t transact frequently, so variance at this granularity is higher.
+    - Unexplainable spike: Given equal weight to outlier jump because this is a sanity check dimension, moderating the effect of rare or unusual flats whose raw z-scores might look wild simply due to thin group sizes. It helps ensure the alerts don't only look at structural quirks (big flats, young flats, etc.).
     - Market defier: Lowest in weightage as it's meant to enhance the score based on the context of market-wide cooling effects, not anchor it. Besides, someone overpaying during a cooling month is interesting, but not necessarily a blockbuster WTF moment on its own. Note: Market-wide cooling effects are subtle and can vary across towns. Variance at this granularity is higher, so you don’t want it overpowering the metric.
 
 7. **WTF threshold**
