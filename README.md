@@ -3,7 +3,9 @@
 
 Some Housing Board (HDB) flats in Singapore sell high. Some sell really high. And then there are the ones that make property analysts inhale sharply through their teeth. This auto-updating project is built to spotlight the outlier flats from the past rolling month the moment they appear.
 
-The WTF Flat Alert System scans every new resale transaction and flags the units that blow past neighbourhood norms, historical trends, and sometimes common sense. Think of it as a seismograph for weirdness in the city-state’s housing market.
+The WTF Flat Alert System scans every new resale transaction and flags the units that blow past neighbourhood norms, historical trends, and sometimes common sense. Think of it as a seismograph for weirdness in the city-state’s housing market. 
+
+(PT: Hello reader! Do regard this project as version 1.0. I will be drilled on regression models in the months ahead as part of the M.S. in Data Journalism programme at Columbia Journalism School, and I intend to revisit this project to make improvements to it. As we say in Singapore, _akan datang_!)
 
 ---
 
