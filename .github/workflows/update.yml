@@ -25,8 +25,11 @@ jobs:
       run: |
         pip install jupyter lxml pandas numpy requests beautifulsoup4 html5lib geocoder
     - name: Scraping today's data
+      timeout-minutes: 30
+      env:
+        DATAGOVSG_API_KEY: ${{ secrets.DATAGOVSG_API_KEY }}
       run: |
-        jupyter nbconvert --to notebook --execute "auto_updating_site.ipynb" --stdout
+        jupyter nbconvert --to notebook --execute "auto_updating_site.ipynb" --ExecutePreprocessor.timeout=1800 --stdout
     - name: Commit and push any changes
       run: |
         git config user.name "Automated"
