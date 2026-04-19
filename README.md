@@ -16,12 +16,10 @@ A flat gets flagged when it deviates sharply from what you’d expect — even a
 If it makes the model squint, it makes the list.
 
 ### The Alamak Meter
-Every flat gets an Alamak Score (0–100) based on how extreme its deviations are in context.
-- 0–70: Nothing to see here
-- 70–80: Hmm, interesting
-- 80–85: Eh, something off leh
-- 85–88: Wah, quite jialat
-- 88–100: ALAMAK!
+Every flat gets an Alamak Score (0–100) based on how extreme its deviations are in context. Only flats scoring 80 or above make the dashboard — with a regression model explaining 90% of price variation, anything below 80 is just mild noise.
+- 80–83: Eh, something off leh
+- 83–85: Wah, quite jialat
+- 85–100: ALAMAK!
 
 ### Why build an alert system
 Because Singapore’s housing market is full of micro-stories hiding inside transaction tables – stories about desirability, scarcity, superstition, renovation trends, and sometimes sheer human irrationality.
@@ -95,8 +93,8 @@ This system transforms raw HDB resale transactions into a 0–100 Alamak Score u
     - Market defier (15%): The regression has month fixed effects, but those capture the *average* market movement, not the *direction*. A flat selling high during a month when the overall market dipped is editorially interesting — it suggests demand that’s bucking the trend. The regression treats all transactions in that month the same.
 
 7. **Alamak threshold**
-- A flat is considered a “Alamak flat” if its score ≥ 70.
-- Because the extreme-tail method already suppresses noise; 70 becomes the sweet spot where the “interesting” flats begin to appear without overwhelming the dashboard.
+- A flat is considered an “Alamak flat” if its score ≥ 80.
+- With the regression-based Dimension D (R²=0.90), the model already explains most price variation. The threshold was raised from 70 to 80 to ensure only genuinely surprising transactions make the cut.
 
 8. **Rolling month**
 - Only flats from the most recent one month (latest month minus 1 month) appear on the public-facing map. This keeps the project living, reactive and news-friendly.
