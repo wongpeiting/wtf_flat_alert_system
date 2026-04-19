@@ -137,9 +137,9 @@ This system transforms raw HDB resale transactions into a 0–100 Alamak Score u
 
 When I began this project, I was skeptical that I could pull off anything remotely close in less than a week. I had not worked with APIs much outside of coursework, and certainly never modelled outliers or deployed something that updates itself. But after following the steps in [this tutorial](https://www.youtube.com/watch?v=QNKxzkNpsko), before long, I found myself with a completed site in a single day. Soma did comment that my pitch was very basic, so I don't doubt that I picked a highly munchable project for myself too. My biggest takeaway is in understanding how each piece of the project's puzzle (Datawrapper, GitHub, VS Code, etc.) speak to each other, and in learning how to debug and work through ~~life's~~a data-heavy project's biggest issues with generous, generous help from ChatGPT.
 
-##### What’s been addressed since v1.0
+##### Reflections (v2.0)
 
-The "more authoritative predictive model" is now in place: a proper OLS regression (R²=0.90) trained on 50,000+ transactions, controlling for 20+ variables including geographic distances, lease decay, and superstition factors. This replaces the group-median approach from v1.0 and was developed as part of the [HDB Regression project](https://github.com/wongpeiting/hdb-regression) using Dhrumil Mehta’s EDA-with-regression pipeline from the Columbia M.S. Data Journalism programme.
+I have since taken regression classes, which have taught me how to apply multivariate regression on my prediction model. I trained my model (R²=0.90) based on 50,000+ transactions, controlling for 20+ variables including geographic distances, lease decay, and superstition factors. This replaces the group-median approach from v1.0 and was developed as part of the [HDB Regression project](https://github.com/wongpeiting/hdb-regression) using Dhrumil Mehta’s EDA-with-regression pipeline from the Columbia M.S. Data Journalism programme.
 
 ##### What’s still on the wish list
 
