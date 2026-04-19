@@ -22,8 +22,12 @@ class RegressionPredictor:
         self.baselines = data['baselines']
         self.factor_levels = data['factor_levels']
         self.metadata = data['metadata']
-        # Cast all coefficients to float (JSON may store some as strings)
-        self.coefs = {k: float(v) if v is not None else 0.0 for k, v in self.coefs.items()}
+        # Cast all coefficients to float (JSON may store some as strings or "NA")
+        def to_float(v):
+            if v is None or v == "NA" or v == "NaN":
+                return 0.0
+            return float(v)
+        self.coefs = {k: to_float(v) for k, v in self.coefs.items()}
         self.intercept = self.coefs['(Intercept)']
 
         # Pre-index categorical coefficients for fast lookup
