@@ -18,8 +18,8 @@ If it makes the model squint, it makes the list.
 ### The Alamak Meter
 Every flat gets an Alamak Score (0–100) based on how extreme its deviations are in context. Only flats scoring 80 or above make the dashboard — with a regression model explaining 90% of price variation, anything below 80 is just mild noise.
 - 80–83: Eh, something off leh
-- 83–85: Wah, quite jialat
-- 85–100: ALAMAK!
+- 83–84: Wah, quite jialat
+- 84–100: ALAMAK!
 
 ### Why build an alert system
 Because Singapore’s housing market is full of micro-stories hiding inside transaction tables – stories about desirability, scarcity, superstition, renovation trends, and sometimes sheer human irrationality.
