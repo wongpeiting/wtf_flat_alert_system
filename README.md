@@ -1,4 +1,4 @@
-# Alamak Flats
+# 🚨 The alamak flat alert system 🚨
 ## A live radar for Singapore's most statistically surprising HDB resale transactions
 
 Some Housing Board (HDB) flats in Singapore sell high. Some sell really high. And then there are the ones that make property analysts inhale sharply through their teeth. This auto-updating project is built to spotlight the outlier flats from the past rolling month the moment they appear.
