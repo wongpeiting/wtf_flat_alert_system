@@ -16,7 +16,7 @@ A flat gets flagged when it deviates sharply from what you’d expect — even a
 If it makes the model squint, it makes the list.
 
 ### The Alamak Meter
-Every flat gets an Alamak Score (0–100) based on how extreme its deviations are across four dimensions. Only flats scoring 80 or above make the dashboard.
+Every flat gets an Alamak Score (0–100) based on how extreme its deviations are in context. Only flats scoring 80 or above make the dashboard — with a regression model explaining 90% of price variation, anything below 80 is just mild noise.
 - 80–82: Eh, something off leh
 - 82–84: Wah, quite jialat
 - 84+: ALAMAK!
@@ -80,10 +80,21 @@ This system transforms raw HDB resale transactions into a 0–100 Alamak Score u
     - 100-point Alamak cases stay rare, and
     - No single sale overwhelms the scale.
 
-6. **Alamak scoring (v2.0)**
-- In v2.0, the four-dimension blended scoring was replaced with a single, more interpretable metric: **how far above the regression’s predicted price the flat actually sold, as a percentage**.
-- A flat is flagged if it sold 15% or more above what the model predicts. The percentage is self-calibrating — it scales naturally as the market moves, with no manual band recalibration needed.
-- The regression model (R²=0.90) controls for 20+ variables including location, size, floor, remaining lease, proximity to MRT/hawker centres/schools, feng shui factors, and superstition variables. If a flat’s price can’t be explained after all of that, the residual percentage captures exactly how far off it is.
+6. **Alamak score calculation**
+- Each of the four dimensions contributes to the overall score based on these weights: 
+    - Price shock (30%),
+    - Outlier jump (20%), 
+    - market defier (15%), and 
+    - unexplainable spike (35%).
+- The regression is the best single detector, but it answers “is this price explainable by fundamentals?” The other three dimensions answer “is this price surprising *in context*?” — compared to neighbours, to the block’s history, and to market timing. Different questions, all worth asking.
+    - Unexplainable spike (35%): Given the highest weightage as it is the most statistically rigorous dimension — a proper regression model (R²=0.90) controlling for 20+ variables. If a flat’s price can’t be explained after accounting for location, size, floor, remaining lease, MRT proximity, hawker proximity, and more, that’s the strongest signal that something genuinely unusual is going on.
+    - Price shock (30%): The regression controls for town, but readers don’t think in regression terms. They think “how does this compare to other 4-rooms in my neighbourhood?” A flat could have a small regression residual (perfectly explained by its high floor and long lease) but still be the most expensive 4-room Yishun has ever seen. That’s newsworthy even if the model says it’s “fair value.”
+    - Outlier jump (20%): The regression has no block-level variable. Two flats in the same block, same type, same floor can sell $200K apart because one was fully renovated with Italian marble and the other has the original 1985 kitchen. The regression sees them as identical. The block-level z-score catches the one that suddenly broke from its block’s pattern.
+    - Market defier (15%): The regression has month fixed effects, but those capture the *average* market movement, not the *direction*. A flat selling high during a month when the overall market dipped is editorially interesting — it suggests demand that’s bucking the trend. The regression treats all transactions in that month the same.
+
+7. **Alamak threshold**
+- A flat is considered an “Alamak flat” if its score ≥ 80.
+- With the regression-based Dimension D (R²=0.90), the model already explains most price variation. The threshold was raised from 70 to 80 to ensure only genuinely surprising transactions make the cut.
 
 8. **Rolling month**
 - Only flats from the most recent one month (latest month minus 1 month) appear on the public-facing map. This keeps the project living, reactive and news-friendly.
