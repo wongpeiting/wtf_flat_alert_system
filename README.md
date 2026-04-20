@@ -16,10 +16,10 @@ A flat gets flagged when it deviates sharply from what you’d expect — even a
 If it makes the model squint, it makes the list.
 
 ### The Alamak Meter
-Every flat is scored by how far above the model's predicted price it actually sold for. Only flats selling 15% or more above predicted make the dashboard.
-- 15–25% above predicted: Eh, something off leh
-- 25–35% above predicted: Wah, quite jialat
-- 35%+ above predicted: ALAMAK!
+Every flat is scored by how far above the model's predicted price it actually sold for. Only flats selling 50% or more above predicted make the dashboard — a high-conviction list of genuinely unexplainable transactions. Flats where the model's prediction is below $200K are excluded (the model is unreliable for very short-lease flats).
+- 50–60% above predicted: Eh, something off leh
+- 60–70% above predicted: Wah, quite jialat
+- 70%+ above predicted: ALAMAK!
 
 ### Why build an alert system
 Because Singapore’s housing market is full of micro-stories hiding inside transaction tables – stories about desirability, scarcity, superstition, renovation trends, and sometimes sheer human irrationality.
